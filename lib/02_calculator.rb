@@ -19,21 +19,16 @@ def multiply(num1, num2)
 end
 
 
-//---
-
-def power(num1, num2)
+def power(num1 ** num2)
   sum = num1^num2
   return sum
 
-def factorial(n)
-  sum = 0
-  while n >= 0
-  sum = sum*n
-  n -= 1
-  end
-  
-  return sum
-end  
+def factorial(a)
+f = 1
+for i in 1..a do
+  f *= i  
+end
+return f
+end
 
-//--
-
+puts factorial(0)
