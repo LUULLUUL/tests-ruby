@@ -1,9 +1,8 @@
-def ftoc（temperatureF)
-  temperatureC = (temperatureF.to_f -32)* (5.0/9.0)
-  return temperatureC
+def ftoc（f)
+  return (f.to_f -32)* (5/9)
 end
 
-def ctof (temperatureC)
-  temperatureF = (temperatureC.to_i *9/5) + 32
-  return temperatureF
+def ctof (c)
+  m = (c.to_i *9/5).to_f
+  return m + 32
 end  
